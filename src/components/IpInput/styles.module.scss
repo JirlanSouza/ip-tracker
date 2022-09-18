@@ -1,0 +1,52 @@
+@import "../../styles/theme.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 3.5rem;
+
+  margin: 1rem;
+  border: none;
+  border-radius: 1rem;
+
+  background: $background-color;
+  box-shadow: 1px 1px 2px rgba($accent-color, 0.25);
+
+  input {
+    width: inherit;
+    height: inherit;
+
+    padding: 1rem;
+
+    border: inherit;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    font-size: 1.4rem;
+
+    background: $background-color;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: inherit;
+
+    border: inherit;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    background: $accent-color;
+    background-image: url("../../assets/images/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+  }
+}
