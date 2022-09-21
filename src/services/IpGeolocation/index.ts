@@ -1,7 +1,7 @@
 import { IHttpClient } from "../api/IHttpCliente";
-import { IpGelocationInformation } from "./IpGelocationInformation";
+import { IpGelocationInformation } from "./IpGeolocationInformation";
 
-export class IpGelocationService {
+export class IpGeolocationService {
   load = false;
   error = false;
 
