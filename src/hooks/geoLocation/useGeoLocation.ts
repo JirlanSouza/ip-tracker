@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { IpGeoLocationService } from "../../factories/services/geoLocation";
+import { ipGeoLocationService } from "../../factories/services/geoLocation";
 
 export type IpGelocationInfo = {
   ip: string;
@@ -21,14 +21,12 @@ export function useIpGeoLocation() {
   useEffect(() => {
     (async () => {
       setStatus({ loading: true, error: false });
-      const getGelocationResult = await IpGeoLocationService.getLocation(ipAdress);
+      const getGelocationResult = await ipGeoLocationService.getLocation(ipAdress);
 
       if (getGelocationResult instanceof Error) {
         setStatus({ loading: false, error: true });
         return;
       }
-
-      console.log(getGelocationResult);
 
       const locationDescription = `${getGelocationResult.location.city}, ${getGelocationResult.location.region} - ${getGelocationResult.location.country}`;
 
