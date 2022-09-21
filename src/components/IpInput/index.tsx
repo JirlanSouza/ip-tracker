@@ -13,6 +13,7 @@ export function IpInnput({ ipAdress, setIpAdress }: IpInputProps) {
     if (ipValue.length < 7) return;
 
     setIpAdress(ipValue);
+    setIpValue("");
   }
 
   return (
