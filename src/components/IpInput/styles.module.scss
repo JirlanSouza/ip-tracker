@@ -5,7 +5,7 @@
   justify-content: space-between;
   width: 90%;
   max-width: 700px;
-  height: 3.5rem;
+  height: 3.8rem;
 
   margin: 3rem 1rem;
   border: none;
@@ -32,6 +32,10 @@
 
     background: $background-color;
 
+    &::placeholder {
+      opacity: 0.5;
+    }
+
     &:focus {
       outline: none;
     }
@@ -40,7 +44,7 @@
   button {
     content: "";
     display: block;
-    width: 3.5rem;
+    width: 3.8rem;
     height: 100%;
 
     border: inherit;

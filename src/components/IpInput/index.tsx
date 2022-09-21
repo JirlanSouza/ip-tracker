@@ -17,7 +17,11 @@ export function IpInnput({ ipAdress, setIpAdress }: IpInputProps) {
 
   return (
     <span className={styles.container}>
-      <input value={ipValue} onChange={(event) => setIpValue(event.target.value)} />
+      <input
+        value={ipValue}
+        onChange={(event) => setIpValue(event.target.value)}
+        placeholder="Serach for any IP adress or domain"
+      />
       <button onClick={handleIpAdress} />
     </span>
   );
