@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly GELOCATION_API_BASE_URL: string;
-  readonly GET_GELOCATION_API_PATH: string;
+  readonly VITE_GEOLOCATION_API_BASE_URL: string;
+  readonly VITE_GEOLOCATION_API_PATH: string;
 }
