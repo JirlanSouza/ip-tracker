@@ -4,14 +4,19 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
+  max-width: 700px;
   height: 3.5rem;
 
-  margin: 1rem;
+  margin: 3rem 1rem;
   border: none;
   border-radius: 1rem;
 
   background: $background-color;
   box-shadow: 1px 1px 2px rgba($accent-color, 0.25);
+
+  @media (min-width: 700px) {
+    width: calc(100% - 2rem);
+  }
 
   input {
     width: inherit;
@@ -36,7 +41,7 @@
     content: "";
     display: block;
     width: 3.5rem;
-    height: inherit;
+    height: 100%;
 
     border: inherit;
     border-top-right-radius: 1rem;
@@ -47,6 +52,11 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    transition: filter .2s;
     cursor: pointer;
+
+    &:hover {
+      filter: opacity(0.7);
+    }
   }
 }
