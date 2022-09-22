@@ -20,8 +20,6 @@ export function useIpGeoLocation() {
 
   useEffect(() => {
     (async () => {
-      if (!ipAdress) return;
-
       setStatus({ loading: true, error: false });
       const getGelocationResult = await ipGeoLocationService.getLocation(ipAdress);
 
