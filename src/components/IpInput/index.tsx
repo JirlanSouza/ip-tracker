@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import styles from "./styles.module.scss";
 
 interface IpInputProps {
@@ -9,7 +9,8 @@ interface IpInputProps {
 export function IpInnput({ ipAdress, setIpAdress }: IpInputProps) {
   const [ipValue, setIpValue] = useState("");
 
-  function handleIpAdress() {
+  function handleIpAdress(event: FormEvent) {
+    event.preventDefault();
     if (ipValue.length < 7) return;
 
     setIpAdress(ipValue);
@@ -17,13 +18,13 @@ export function IpInnput({ ipAdress, setIpAdress }: IpInputProps) {
   }
 
   return (
-    <span className={styles.container}>
+    <form className={styles.container} onSubmit={handleIpAdress}>
       <input
         value={ipValue}
         onChange={(event) => setIpValue(event.target.value)}
         placeholder="Serach for any IP adress or domain"
       />
-      <button onClick={handleIpAdress} />
-    </span>
+      <button type="submit" />
+    </form>
   );
 }
