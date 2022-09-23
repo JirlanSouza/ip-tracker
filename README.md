@@ -1,6 +1,6 @@
 # ip-tracker
 
-Aplication of ip adress location tracker!  
+Aplication of ip address location tracker!  
 get IP address geolocation and view location on a map on-screen.
 using [IP Geolocation API by IPify](https://geo.ipify.org).
 
@@ -13,7 +13,7 @@ using [IP Geolocation API by IPify](https://geo.ipify.org).
 
 ## Pages
 
-Access demo [Ip Tracker](https://ip-adress-tracker-location.netlify.app/)
+Access demo [Ip Tracker](https://ip-address-tracker-location.netlify.app/)
 
 #### Desktop page
 

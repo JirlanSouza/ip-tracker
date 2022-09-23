@@ -22,7 +22,7 @@ export function IpInnput({ ipAdress, setIpAdress }: IpInputProps) {
       <input
         value={ipValue}
         onChange={(event) => setIpValue(event.target.value)}
-        placeholder="Serach for any IP adress or domain"
+        placeholder="Serach for any IP address or domain"
       />
       <button type="submit" />
     </form>

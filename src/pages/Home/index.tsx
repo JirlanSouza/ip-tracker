@@ -10,7 +10,7 @@ export function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.banner}>
-        <h1>IP Adredd Tracker</h1>
+        <h1>IP Address Tracker</h1>
         <IpInnput ipAdress={ipAdress} setIpAdress={setIpAdress} />
         <InfoCard {...ipGelocationInformation} locationDescription={ipGelocationInformation?.location.description} />
       </div>
